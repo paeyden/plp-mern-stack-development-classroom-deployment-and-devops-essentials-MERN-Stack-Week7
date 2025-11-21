@@ -115,13 +115,13 @@ export const categoryService = {
 export const authService = {
   // Register a new user
   register: async (userData) => {
-    const response = await api.post('/api/auth/register', userData); // ✅ added /api
+    const response = await api.post('/auth/register', userData); // ✅ added /api
     return response.data;
   },
 
   // Login user
   login: async (credentials) => {
-    const response = await api.post('/api/auth/login', credentials); // ✅ added /api
+    const response = await api.post('/auth/login', credentials); // ✅ added /api
     if (response.data.token) {
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
