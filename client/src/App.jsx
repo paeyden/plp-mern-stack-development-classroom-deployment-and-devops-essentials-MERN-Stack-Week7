@@ -8,7 +8,7 @@ import PostList from './pages/PostList';
 import SinglePost from './pages/SinglePost';
 import CreatePost from './pages/PostForm';
 import EditPost from './pages/PostForm';
-import Auth from './pages/Auth';
+import Auth from './pages/auth';
 import Profile from './pages/Profile';
 import Categories from './pages/Categories';
 
